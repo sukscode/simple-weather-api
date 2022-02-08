@@ -5,8 +5,12 @@ const app = express();
 const port = 3001;
 
 app.get("/", function (req, res) {
+ // res.sendFile(__dirname+"/index.htm");
+  const query="chennai";
+  const apiKey="42142bf56ecb3330c8c616b3a9b733d3";
+
   https.get(
-    "https://api.openweathermap.org/data/2.5/weather?q=chennai&units=metric&appid=42142bf56ecb3330c8c616b3a9b733d3",
+    "https://api.openweathermap.org/data/2.5/weather?q="+query+"&units=metric&appid="+apiKey,
     function (response) {
       console.log(response.statusCode);
       response.on("data", function (data) {
