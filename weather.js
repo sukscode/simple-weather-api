@@ -18,10 +18,19 @@ app.get("/", function (req, res) {
         console.log(temp);
         const desc = weatherData.weather[0].description;
         console.log(desc);
+        const icon=weatherData.weather[0].icon;
+        const imageURL="http://openweathermap.org/img/wn/"+icon+"@2x.png";
+        res.write("<h1>The temperature in chennai is "+temp+" degrees Celcius.</h1>");
+        res.write("<h4>The weather is currently "+desc+"</h4>");
+        res.write("<img src="+imageURL+">");
+        res.send();
+        
+
+
       });
     }
   );
-  res.send("server is running");
+  
 });
 
 app.listen(3001, function () {
