@@ -1,0 +1,26 @@
+{
+  "name": "simple-weather-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weather.js",
+  "type": "module",
+  "jshint.options": {
+    "esversion": 6
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukscode/simple-weather-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sukscode/simple-weather-api/issues"
+  },
+  "homepage": "https://github.com/sukscode/simple-weather-api#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
